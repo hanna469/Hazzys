@@ -51,3 +51,56 @@ body {}
 #wrap main #intro_bnr .intro_page span {}
 #wrap main #intro_bnr .intro_page .now_page {}
 #wrap main #intro_bnr .intro_page .all_page {}
+#wrap main .step_icons_warp {}
+#wrap main .step_icons_warp .step_icons_card {}
+#wrap main .step_icons_warp .step_icons_card .step_icons_card_txt {}
+#wrap main .step_icons_warp .step_icons_card .step_icons_card_txt h1 {}
+#wrap main .step_icons_warp .step_icons_card .step_icons_card_txt h1 > p {}
+#wrap main .step_icons_warp .step_icons_card .step_icons_card_txt h1 .view_link {}
+#wrap main .step_icons_warp .step_icons_slide_wrap {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .step_icons_slide_container {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .step_icons_slide_container .step_icons_slide {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .step_icons_slide_container .step_icons_slide a {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .step_icons_slide_container .step_icons_slide a img {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .page {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .page .active {}
+#wrap main .step_icons_warp .step_icons_slide_wrap .page span {}
+#wrap main .moments_style_wrap {}
+#wrap main .moments_style_wrap .moments_style_card {}
+#wrap main .moments_style_wrap .moments_style_card .moments_style_card_txt {}
+#wrap main .moments_style_wrap .moments_style_card .moments_style_card_txt h1 {}
+#wrap main .moments_style_wrap .moments_style_card .moments_style_card_txt p {}
+#wrap main .moments_style_wrap .moments_style_card .moments_style_card_txt .view_link {}
+#wrap main .moments_style_wrap .moments_style_slide_wrap {}
+#wrap main .moments_style_wrap .moments_style_slide_wrap .moments_style_slide_container {}
+#wrap main .moments_style_wrap .moments_style_slide_wrap .moments_style_slide_container .moments_style_slide {}
+#wrap main .moments_style_wrap .moments_style_slide_wrap .moments_style_slide_container .moments_style_slide a {}
+#wrap main .moments_style_wrap .moments_style_slide_wrap .moments_style_slide_container .moments_style_slide a img {}
+#wrap main .horok_bnr {}
+#wrap main .horok_bnr .view_link {}
+#wrap main #with_hazzys {}
+#wrap main #with_hazzys h1 {}
+#wrap main #with_hazzys h1 img {}
+#wrap main #with_hazzys .contents{}
+#wrap main #with_hazzys .contents .with_contents {}
+#wrap main #with_hazzys .contents .with_contents img {}
+#wrap main #with_hazzys .contents .with_contents h2 {}
+#wrap main #with_hazzys .contents .with_contents p {}
+#wrap footer {}
+#wrap footer #f_top {}
+#wrap footer #f_top #f_lf_corp {}
+#wrap footer #f_top #f_lf_corp p {}
+#wrap footer #f_top #f_lf_corp address {}
+#wrap footer #f_top #fnb {}
+#wrap footer #f_top #fnb dt {}
+#wrap footer #f_top #fnb dd {}
+#wrap footer #f_top #fnb dd a {}
+#wrap footer #f_top #fnb dd a span {}
+#wrap footer #f_top #fnb dd .country {}
+#wrap footer #f_top #fnb dd .country_list {}
+#wrap footer #f_top #fnb dd .country_list a {}
+#wrap footer #f_btm {}
+#wrap footer #f_btm img {}
+#wrap footer #f_btm img .fnb_link {}
+#wrap footer #f_btm img .fnb_link a {}
+#wrap footer #f_btm img .fnb_link a img {}
