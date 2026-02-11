@@ -4,10 +4,12 @@ body {}
 #wrap #fab a {}
 #wrap #fab a img {}
 #wrap #fab .up_btn {}
+#wrap #fab .up_btn img {}
 #wrap #top_bnr {}
 #wrap #top_bnr a {}
 #wrap #top_bnr a img {}
 #wrap #top_bnr .close_btn {}
+#wrap #top_bnr .close_btn img {}
 #wrap header {}
 #wrap header h1 {}
 #wrap header h1 a {}
