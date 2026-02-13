@@ -29,13 +29,13 @@
                         <div class="lnb_bg">
                             <h1>MEN</h1>
                             <ul class="lnb_depth_left">
-                                <li class="lnb_depth2">
+                                <li>
                                     <a href="">OUTERWEAR</a>
                                     <ul class="lnb_depth3">
                                         <li><a href="">Jumpers</a></li>
                                     </ul>
                                 </li>
-                                <li class="lnb_depth2">
+                                <li>
                                     <a href="">KNITWEAR</a>
                                     <ul class="lnb_depth3">
                                         <li><a href="">Crew Neck</a></li>
@@ -44,7 +44,7 @@
                                         <li><a href="">Vests</a></li>
                                     </ul>
                                 </li>
-                                <li class="lnb_depth2">
+                                <li>
                                     <a href="">SHIRTS</a>
                                     <ul class="lnb_depth3">
                                         <li><a href="">Short sleeve</a></li>
@@ -54,7 +54,7 @@
                                         <li><a href="">Check</a></li>
                                     </ul>
                                 </li>
-                                <li class="lnb_depth2">
+                                <li>
                                     <a href="">T-SHIRTS</a>
                                     <ul class="lnb_depth3">
                                         <li><a href="">Short sleeve</a></li>
@@ -62,7 +62,7 @@
                                         <li><a href="">Sweatshirts</a></li>
                                     </ul>
                                 </li>
-                                <li class="lnb_depth2">
+                                <li>
                                     <a href="">PANTS</a>
                                     <ul class="lnb_depth3">
                                         <li><a href="">Cropped</a></li>
@@ -74,7 +74,8 @@
                             </ul>
                             <div class="lnb_depth_right">
                                 <ul class="lnb_depth2">
-                                    <li><a href="">SPOTLIGHT</a>
+                                    <li>
+                                        <a href="">SPOTLIGHT</a>
                                         <ul class="lnb_depth3">
                                             <li><a href="">FLAGSHIP STORE</a></li>
                                             <li><a href="">HAPPY PUPPY</a></li>
@@ -101,13 +102,14 @@
                 <li><a href="#" class="lang">CN</a></li>
                 <li>
                     <a href="#" class="search"><img src="./images/ico_search 1.png" alt="search"></a>
-                    <div class="search_wrap">
+                    <div class="search_wrap"><!-- 검색창 클릭 시, 검색창 박스 -->
                         <form action="#" method="get" class="search_container">
-                            <input type="search" name="search" class="search_box" placeholder="Enter Keywords"><img src="./images/ico_search 1.png">
+                            <input type="search" name="search" class="search_box" placeholder="Enter Keywords">
+                            <button type="button" class="search_btn"><img src="./images/ico_search 1.png"></button>
                         </form>
                         <div class="recent_search">
-                        <p><em>Recent Keywords</em></p>
-                        <button type="button">Clear All</button>
+                        <h1>Recent Keywords</h1>
+                        <button type="button" class="clear_btn">Clear All</button>
                         </div>
                         <div class="keywords">
                             <a href="#"><em>men</em><img src="./images/close.svg" alt=""></a>
@@ -117,8 +119,10 @@
                 <li><a href="#" class="store"><img src="./images/ico_util_store 1.png" alt="Finding the store"></a></li>
                 <li><a href="#" class="login"><img src="./images/ico_login 1.png" alt="login"></a></li>
                 <li>
-                    <a href="#" class="cart"><img src="./images/icon_cart.svg" alt="cart">
-                    <p class="cart_count">0</p></a>
+                    <a href="#" class="cart">
+                        <img src="./images/icon_cart.svg" alt="cart">
+                        <span class="cart_count">0</span>
+                    </a>
                 </li>
             </ul>
         </header>
@@ -226,7 +230,7 @@
                     </a>
                 </div>
             </div>
-            <!-- e.with hazzys -->
+            <!-- e.with_hazzys -->
         </main>
         <!-- e. main -->
         <!-- s. footer -->
