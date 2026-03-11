@@ -114,14 +114,14 @@
                         <form action="#" method="get" class="search_container">
                             <input type="search" name="search" class="search_box" placeholder="Enter Keywords">
                             <button type="button" class="search_btn"><img src="./images/ico_search 1.png"></button>
+                            <div class="recent_search">
+                                <h1>Recent Keywords</h1>
+                                <button type="button" class="clear_btn">Clear All</button>
+                            </div>
+                            <div class="keywords">
+                                <a href="#"><em>men</em><img src="./images/close.svg" alt=""></a>
+                            </div>
                         </form>
-                        <div class="recent_search">
-                            <h1>Recent Keywords</h1>
-                            <button type="button" class="clear_btn">Clear All</button>
-                        </div>
-                        <div class="keywords">
-                            <a href="#"><em>men</em><img src="./images/close.svg" alt=""></a>
-                        </div>
                     </div>
                 </li>
                 <li><a href="#" class="store"><img src="./images/ico_util_store 1.png" alt="Finding the store"></a></li>
@@ -151,34 +151,37 @@
                     </div>
                 </div>
                 <div class="intro_page">
-                    <span class="current">1</span>
-                    <span class="all">/2</span>
+                    <span class="current active">1</span>
+                    <span >/</span>
+                    <span class="all">2</span>
                 </div>
             </div>
             <div class="step_icons_warp">
                 <a href="#" class="step_icons_card"> <!-- bg추가 -->
-                    <div class="step_icons_card_txt">
+                    <div class="step_icons_card_txt card_txt">
                         <h1>STEP INTO YOUR ICONS</h1>
                         <p>Discover the Looks That Define the Season</p>
                         <p class="view_link">VIEW NOW</p>
                     </div>
                 </a>
-                <div class="step_icons_slide_wrap"> <!-- viewport -->
-                    <div class="step_icons_slide_container"> <!-- 슬라이드 묶음 -->
-                        <div class="slide slide1"> <!-- 개별슬라이드 -->
-                            <a href="#"><img src="./images/step_icons_slide1.jpg"></a>
-                        </div>
-                        <div class="slide slide2">
-                        <a href="#"><img src="./images/step_icons_slide2.jpg"></a>
-                        </div>
-                        <div class="slide slide3">
-                        <a href="#"><img src="./images/step_icons_slide3.jpg"></a>
-                        </div>
-                        <div class="slide slide4">
-                        <a href="#"><img src="./images/step_icons_slide4.jpg"></a>
-                        </div>
-                        <div class="slide slide5">
-                        <a href="#"><img src="./images/step_icons_slide5.jpg"></a>
+                <div class="step_icons_slide_bg">
+                    <div class="step_icons_slide_wrap"> <!-- viewport -->
+                        <div class="step_icons_slide_container"> <!-- 슬라이드 묶음 -->
+                            <div class="slide slide1"> <!-- 개별슬라이드 -->
+                                <a href="#"><img src="./images/step_icons_slide1.jpg"></a>
+                            </div>
+                            <div class="slide slide2">
+                            <a href="#"><img src="./images/step_icons_slide2.jpg"></a>
+                            </div>
+                            <div class="slide slide3">
+                            <a href="#"><img src="./images/step_icons_slide3.jpg"></a>
+                            </div>
+                            <div class="slide slide4">
+                            <a href="#"><img src="./images/step_icons_slide4.jpg"></a>
+                            </div>
+                            <div class="slide slide5">
+                            <a href="#"><img src="./images/step_icons_slide5.jpg"></a>
+                            </div>
                         </div>
                     </div>
                     <div class="page">
@@ -193,7 +196,7 @@
             <!-- e: step_icons -->
             <div class="moments_style_wrap">
                 <div class="moments_style_card"> <!-- bg추가 -->
-                    <div class="moments_style_card_txt">
+                    <div class="moments_style_card_txt card_txt">
                         <h1>MOMENTS IN STYLE</h1>
                         <p>Iconically Captured Memories</p>
                         <a href="#" class="view_link">VIEW NOW</a>

@@ -1,26 +1,24 @@
 body {}
 #wrap {}
 /* ===================================================== */
-#wrap #fab {}
-#wrap #fab a {
+#wrap #fab {
     position: fixed;
     z-index: 999;
-    right:50px; 
+    right:50px; bottom: 30px;
+}
+#wrap #fab a {
     display: flex;
     justify-content: center;
     background-color: #fff;
     width:45px; height:45px;
     padding: 12px; border-radius: 50%;
     border:1px solid #e9e9e9;
+    margin-bottom: 10px;
 }
 #wrap #fab a img {width:100%;}
-#wrap #fab .mypage_btn {
-    bottom:100px;
-}
+#wrap #fab .mypage_btn {}
 #wrap #fab .mypage_btn img {width:100%;}
-#wrap #fab .up_btn {
-    bottom:50px;
-}
+#wrap #fab .up_btn {}
 #wrap #fab .up_btn img {}
 /* ===================================================== e.fab */
 #wrap #top_bnr {
@@ -76,35 +74,34 @@ body {}
 #wrap header:hover .user_menu li > span {background-color: #999;}
 /* ===================================================== 헤더 개별 */
 #wrap header {
-    /* overflow: hidden; */
-    /* position:relative; */
-    /* background-color: turquoise; */
     padding: 0 70px;
+    min-width: 1520px;
     height: 80px;
     display: flex; flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     gap:60px;
-    position: relative;
+    position: sticky; top:0px;
+    z-index: 999;
+    margin-bottom: -80px;
 }
-#wrap header > h1,
-#wrap header nav #gnb > li,
-#wrap header .user_menu li {}
-#wrap header > h1 {}
-#wrap header > h1 a {width: 111px; height:20px; display: block;}
+#wrap header > h1 {width: 111px;}
+#wrap header > h1 a {}
 /* logo */
 #wrap header > h1 a img {width: 100%;} 
 #wrap header nav {margin-right: auto;}
 #wrap header nav #gnb {
     display: flex; flex-flow: row nowrap;
     gap: 30px;
-    align-items: center;
-    
+    align-items: center; justify-content: center;    
 }
-#wrap header nav #gnb > li {}
+#wrap header nav #gnb > li {padding: 30px 0;}
 #wrap header nav #gnb > li > a {
     font-size: 0.94rem;
     font-weight: 700;
+    height: 80px;
+    display: block;
+    line-height: 80px;
 }
 
 /* ============================================== s. lnb */
@@ -112,7 +109,8 @@ body {}
     border-top:1px solid #e9e9e9;
     position:absolute; left:0; top:100%;
     background-color:#fff;
-    width:100%;
+    /* width:100%; */
+    min-width: 1520px;
     padding: 45px 70px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -122,47 +120,44 @@ body {}
 #wrap header nav #gnb > li .lnb_bg h1 {
     font-size: 2rem;
     font-weight: 700;
-    width: 18%;
+    /* width: 18%; */
+    min-width: 273px;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left {
     display: flex; flex-flow: row wrap;
     justify-content: flex-start;
-    width: 45%;
-    /* gap:0 60px; */
+    /* width: 45%; */
+    min-width: 684px;
     border-right:1px solid #e9e9e9;
 }
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li {margin-bottom: 35px; width:calc((100% - 200px) / 4);}
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li {width:calc((100% - 200px) / 4);}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li:nth-child(1) {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li:nth-child(2) {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li:nth-child(3) {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li:nth-child(4) {margin-right: 200px;}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li:nth-child(5) {margin: 0;}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li > a {
-    display: block;
-    width:100%;
-}
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li > a {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 {}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li {margin-bottom: 15px;}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li a {display: block; width:80%;}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li a {position: relative; z-index: 100;}
-/* #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li > a::after {
-    content: ''; display: block;
-    height:1px; width: max-content;
-    background-color: #000;
-    position:absolute; bottom:0px; left:0;
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li {}
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li a {
+    width:100%;
+    display: block;
+    padding-bottom: 15px;
+    position: relative;
 }
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li a::after {
+/* #wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li .lnb_depth3 li a::after {
     content: ''; display: block;
-    height:1px; width: 100%;
+    width: 5px; height: 1px;
     background-color: #000;
-    position:absolute; bottom:2px; left:0;
-    z-index: 90;
-} */
+    position: absolute; left:0; bottom:0;
+} 호버 시 나타날 선 만들던거 */
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_left > li a {position: relative; z-index: 100;}
 /* ===================================================== e.lnb_left */
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right {
     display: flex; flex-flow: row nowrap;
     justify-content: flex-start;
-    width: 37%;
+    /* width: 37%; */
+    min-width: 562px;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 {
     padding-left: 40px;
@@ -172,16 +167,15 @@ body {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 > li > p {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 > li .lnb_depth3 {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 > li .lnb_depth3 li {margin-bottom: 10px;}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 > li .lnb_depth3 li a {display: block;}
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2 > li .lnb_depth3 li a {display: block; line-height: 1.3;}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img {
     display: flex; flex-flow: row nowrap;
-    width:75%;
+    /* width:75%; */
+    max-width: 600px;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img a {}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img a:first-child {margin-right: 5px;}
-#wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img a img {
-    width:100%;
-}
+#wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img a img {width:100%;}
 #wrap header nav #gnb > li .lnb_bg .lnb_depth_right .lnb_depth2_img a .iconic {
     margin-top: 10px;
     font-size: 0.81rem;
@@ -192,7 +186,7 @@ body {}
 #wrap header .user_menu {
     display: flex; flex-flow: row nowrap;
     gap:15px;
-    align-items: center;    
+    align-items: center;
 }
 /* ========================================================= user_menu 개별 */
 #wrap header .user_menu li {}
@@ -210,30 +204,41 @@ body {}
 #wrap header .user_menu li .search img {}
 /* ===================================================== 검색창 클릭 시 나오는 검색창 박스 */
 #wrap header .user_menu li .search_wrap {
-    /* display: none; */
-    background-color: whitesmoke;
+    background-color: #fff;
     position:absolute; left:0; top:100%;
-    width:100%; height:200px;
+    width:100%; height:300px;
     display: flex; flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    display: none;
 }
+#wrap header .user_menu li:hover .search_wrap {display: flex;}
 #wrap header .user_menu li .search_wrap .search_container {
-    width: 60%;
+    width: 50%;}
+#wrap header .user_menu li .search_wrap .search_container .search_box {
+    width: 100%;
+    padding: 15px 20px;
+    position: relative;
+    background-color: #f7f7f7;
 }
-#wrap header .user_menu li .search_wrap .search_container .search_box {}
-#wrap header .user_menu li .search_wrap .search_container .search_btn {}
-#wrap header .user_menu li .search_wrap .search_container .search_btn img {}
+#wrap header .user_menu li .search_wrap .search_container .search_btn {
+    position: absolute;
+    right: 490px;
+    top:75px;
+}
+#wrap header .user_menu li .search_wrap .search_container .search_btn img {width: 100%;}
 #wrap header .user_menu li .search_wrap .recent_search {
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 50px 0 20px;
 }
-#wrap header .user_menu li .search_wrap .recent_search h1 {}
-#wrap header .user_menu li .search_wrap .recent_search .clear_btn {}
-/* ===================================================== e.검색창 박스 */
-#wrap header .user_menu li .search_wrap .keywords {}
-#wrap header .user_menu li .search_wrap .keywords a {}
+#wrap header .user_menu li .search_wrap .recent_search h1 {font-weight: 600;}
+#wrap header .user_menu li .search_wrap .recent_search .clear_btn {color:#bbb; font-size: 0.81rem; text-decoration: underline 1px solid #bbb;}
+#wrap header .user_menu li .search_wrap .keywords {width: 80px; border: 1px solid #bbb; text-align: center; padding: 10px 8px;}
+#wrap header .user_menu li .search_wrap .keywords a {display: flex; justify-content: center; align-items: center; gap:10px;}
 #wrap header .user_menu li .search_wrap .keywords a em {}
-#wrap header .user_menu li .search_wrap .keywords a img {}
+#wrap header .user_menu li .search_wrap .keywords a img {filter:invert(0);}
+/* ===================================================== e.검색창 박스 */
 #wrap header .user_menu li .store {}
 #wrap header .user_menu li .store img {}
 #wrap header .user_menu li .login {}
